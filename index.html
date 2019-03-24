@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            @font-face { font-family: "PressStart2P"; src: url("PressStart2P.ttf") }
+            body {
+				font-family: "PressStart2P";
+				text-align: center;
+				border: 0 !important;
+				margin: 0 !important;
+				padding: 0 !important;
+			}
+            canvas {
+                border: 1px solid black;
+                image-rendering: pixelated;
+                left: 0;
+                margin: 0 auto;
+                position: absolute;
+                right: 0; 
+                text-align: center;
+            }
+            #background { background-color: #01004F }
+        </style>
+    </head>
+    <body>
+        <div id="canvasContainer">
+            <canvas id="background" width="960" height="720"></canvas>
+            <canvas id="characters" width="960" height="720"></canvas>
+            <canvas id="HUD" width="960" height="720"></canvas>
+            <canvas id="menu" width="960" height="720"></canvas>
+            <canvas id="menutext" width="960" height="720"></canvas>
+        </div>
+        <div id="fontLoader">
+            <div style="font-family:PressStart2P">&nbsp;</div>
+            <div style="font-family:OpenDyslexic">&nbsp;</div>
+        </div>
+        <script src="js/rendering.js"></script>
+        <script src="js/sound.js"></script>
+        <script src="js/input.js"></script>
+        <script src="js/words.js"></script>
+        <script src="js/spacecutscenes.js"></script>
+        <script src="js/space.js"></script>
+        <script src="js/church.js"></script>
+        <script src="js/stills.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">document.addEventListener("DOMContentLoaded", game.Init);</script>
+    </body>
+</html>
